@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Details</title>
+     <style>
+        body {
+            font-family: monospace;
+            height: 100vh;
+            background-image: url(https://i.pinimg.com/originals/76/3f/91/763f91b3a3d7a5541c50c94bdc5c76d5.jpg);
+            background-size: cover;
+        }
+    	.vids{
+            max-width: 685px;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+         #accordion {
+             margin: 100px auto;
+             width: 600px;
+         }
+         #accordion li {
+             list-style: none;
+             width: 100%;
+             margin-bottom: 10px;
+             background: #61A5C2;
+             padding: 10px;
+             border-radius: 4px;
+         }
+         #accordion li label {
+             padding: 10px;
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             font-size: 18px;
+             font-weight: 500;
+             cursor: pointer;
+             color: floralwhite;
+         }
+         #accordion li label span {
+             transform: rotate(90deg);
+             font-size: 22px;
+         }
+         #accordion label + input[type="radio"]{
+             display: none;
+         }
+         #accordion .content{
+             padding: 0 10px;
+             line-height: 26px;
+             max-height: 0;
+             overflow: hidden;
+             transition: max-height 0.5s;
+         }
+         #accordion label + input[type="radio"]:checked + .content{
+             max-height: 400px;
+         }
+     </style>
+</head>
+<body>
+<div class="vids">
+<iframe width="700" height="315" src="https://www.youtube.com/embed/tOtbBfDuYBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+	<ul id="accordion">
+        <li>
+            <label for="first">Background Story <span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="first" checked>
+            <div class="content">
+                <p>
+Meet Noleen, she was born on March 1,2007. She's known as a shy and introverted child. But, it's not like she chose to be that way. She often felt overlooked and ignored by her peers. No matter how hard she tried to fit in or be noticed, she felt like she was invisible in other people's eyes.
+<br>
+One day, Noleen stumbled upon a group of people gossiping. She found herself drawn to the drama and intrigue of the conversation, and for the first time in a long time, she felt like she was a part of something. From that moment on, Noleen embraced gossiping as a way to feel seen and heard. She became known as the go-to person for the latest gossip, and she enjoys attention and interest she received from others.
+<br>
+•hint: "all wise men are fools, yet not all fools are wise men"
+                </p>
+            </div>
+        </li>
+         <li>
+            <label for="second">Likes and Dislikes<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="second">
+            <div class="content">
+                <p>
+               likes: romance, comedy, sweet fruit s, milktea, fruit tea, waffles, fast foods, savory food, and exciting online games
+                <br>
+               dislikes: horror, sad novels, vegetable, plastic, whisper blower, research, gossips about her.
+                </p>
+            </div>
+        </li>
+         <li>
+            <label for="third">Social Media<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="third">
+            <div class="content">
+                <p>
+                About Me(must click)
+                </p>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
